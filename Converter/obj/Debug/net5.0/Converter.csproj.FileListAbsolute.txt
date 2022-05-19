@@ -1,0 +1,16 @@
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\bin\Debug\net5.0\Converter.exe
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\bin\Debug\net5.0\Converter.deps.json
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\bin\Debug\net5.0\Converter.runtimeconfig.json
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\bin\Debug\net5.0\Converter.runtimeconfig.dev.json
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\bin\Debug\net5.0\Converter.dll
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\bin\Debug\net5.0\Converter.pdb
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.csproj.AssemblyReference.cache
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.AssemblyInfoInputs.cache
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.AssemblyInfo.cs
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.csproj.CoreCompileInputs.cache
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.dll
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\refint\Converter.dll
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.pdb
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\Converter.genruntimeconfig.cache
+C:\Users\GET Academy\Desktop\Tronds mappe\Converter\Converter\obj\Debug\net5.0\ref\Converter.dll
