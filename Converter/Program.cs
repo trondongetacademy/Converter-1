@@ -12,18 +12,19 @@ namespace Converter
 
         static void Main(string[] args)
         {
-      
+            TheOneMethod objTheOneMethod = new TheOneMethod();
+
             bool status = true;
             char SjekkeSumEllerKonverterEllerAvslutt;
+            char FortsetteEllerAvslutte = 'J';
+
 
             // Lag egen metode for repeterende tekst på filer
 
             Console.WriteLine("Hei og velkommen til konvertern");
             Console.WriteLine("Velg mellom: 1. Temperatur 2. Penger 3. Hastigheter");
             int brukerValg = Convert.ToInt32(Console.ReadLine());
-            back();
-            void back()
-            {
+            
                 while (status)
                 {
                     switch (brukerValg)
@@ -32,20 +33,30 @@ namespace Converter
                             Console.WriteLine("Du har valgt temperatur kalkualtor");
                             Grader sammenlignTemperature = new Grader();
                             sammenlignTemperature.Temperature();
-                            break;
+                            Console.WriteLine("Ønsker du å fortsette? eller vil du velge en annen kalkulator?");
+                            Console.WriteLine("Trykk \'J\' for JA, eller \'N\' for NEI.");
+                            FortsetteEllerAvslutte = Convert.ToChar(Console.ReadLine());
+                        break;
                         case 2:
                             Console.WriteLine("Du har valgt Penge kalkualtor");
                             Penger sammenlignValutaer = new Penger();
                             sammenlignValutaer.Money();
-                            break;
+                            Console.WriteLine("Ønsker du å fortsette? eller vil du velge en annen kalkulator?");
+                            Console.WriteLine("Trykk \'J\' for JA, eller \'N\' for NEI.");
+                            FortsetteEllerAvslutte = Convert.ToChar(Console.ReadLine());
+                        break;
                         case 3:
                             Console.WriteLine("Du har valgt hastighet kalkualtor");
                             Hastighet speed = new Hastighet();
                             speed.fart();
-                            break;
+                            Console.WriteLine("Ønsker du å fortsette? eller vil du velge en annen kalkulator?");
+                            Console.WriteLine("Trykk \'J\' for JA, eller \'N\' for NEI.");
+                            FortsetteEllerAvslutte = Convert.ToChar(Console.ReadLine());
+                        break;
                     }
+                if (FortsetteEllerAvslutte == 'N') status = false;
                 }
-            }
+            
            
            
         

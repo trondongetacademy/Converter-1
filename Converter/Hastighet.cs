@@ -8,6 +8,9 @@ namespace Converter
 {
     internal class Hastighet
     {
+
+        TheOneMethod objTheOneMethod = new TheOneMethod();
+
         public double Kmh;
         public double Mph;
         public double Mach;
@@ -37,75 +40,99 @@ namespace Converter
                         Kmh = Convert.ToDouble(Console.ReadLine());
                         value = Kmh * 0.62;
                         Console.WriteLine(value + " Mph");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 2:
                         Console.WriteLine("Du har valgt å Konvertere Km/t til Mach. Skriv inn..");
                         Kmh = Convert.ToDouble(Console.ReadLine());
                         value = Kmh * 0.0008;
                         Console.WriteLine(value + " Mach");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 3:
                         Console.WriteLine("Du har valgt å Konvertere Km/t til Knop. Skriv inn..");
                         Kmh = Convert.ToDouble(Console.ReadLine());
                         value = Kmh * 0.539957;
                         Console.WriteLine(value + " Knop");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 4:
                         Console.WriteLine("Du har valgt å Konvertere Mph til Km/t. Skriv inn..");
                         Mph = Convert.ToDouble(Console.ReadLine());
                         value = Mph * 1.62;
                         Console.WriteLine(value + " Km/t");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 5:
                         Console.WriteLine("Du har valgt å Konvertere Mph til Mach. Skriv inn..");
                         Mph = Convert.ToDouble(Console.ReadLine());
                         value = Mph * 0.001303;
                         Console.WriteLine(value + " Mach");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 6:
                         Console.WriteLine("Du har valgt å Konvertere Mph til Knop. Skriv inn..");
                         Mph = Convert.ToDouble(Console.ReadLine());
                         value = Mph * 0.868976;
                         Console.WriteLine(value + " Knop");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
+
                         break;
                     case 7:
                         Console.WriteLine("Du har valgt å Konvertere Mach til Km/h. Skriv inn..");
                         Mach = Convert.ToDouble(Console.ReadLine());
                         value = Mach * 1234.8;
-                        Console.WriteLine(value + " Km/h");
+                        Console.WriteLine(value + " Km/");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 8:
                         Console.WriteLine("Du har valgt å Konvertere Mach til Mph. Skriv inn..");
                         Mach = Convert.ToDouble(Console.ReadLine());
                         value = Mach * 767.269148;
                         Console.WriteLine(value + " Mph");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 9:
                         Console.WriteLine("Du har valgt å Konvertere Mach til Knop. Skriv inn..");
                         Mach = Convert.ToDouble(Console.ReadLine());
                         value = Mach * 666.738661;
                         Console.WriteLine(value + " Knop");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 10:
                         Console.WriteLine("Du har valgt å Konvertere Knop til Km/h. Skriv inn..");
                         Knots = Convert.ToDouble(Console.ReadLine());
                         value = Knots * 1.852;
                         Console.WriteLine(value + " Km/h");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 11:
                         Console.WriteLine("Du har valgt å Konvertere Knop til Mph. Skriv inn..");
                         Knots = Convert.ToDouble(Console.ReadLine());
                         value = Knots * 1.150779;
                         Console.WriteLine(value + " Mph");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 12:
                         Console.WriteLine("Du har valgt å Konvertere Knop til Mach. Skriv inn..");
                         Knots = Convert.ToDouble(Console.ReadLine());
                         value = Knots * 0.0015;
                         Console.WriteLine(value + " Mach");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                 }
-                if (FortsetteEllerAvslutte == 'N') status = false;
 
             }
         }

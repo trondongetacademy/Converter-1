@@ -9,6 +9,10 @@ namespace Converter
     internal class Grader
     {
 
+        TheOneMethod objTheOneMethod = new TheOneMethod();
+
+
+
         public double Celcius;
         public double Fahrenheit;
         public double value;
@@ -24,7 +28,6 @@ namespace Converter
         {
             Console.WriteLine("Velg 1. for å konvertere Celcius til Fahrenheit eller 2. For å konvertere Fahrenheit til Celcius");
            
-
             BrukerValg = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(BrukerValg);
             while (status)
@@ -36,9 +39,8 @@ namespace Converter
                         Celcius = Convert.ToDouble(Console.ReadLine());
                         value = ((Celcius * 9) / 5) + 32;
                         Console.WriteLine(value + " Fahrenheit");
-                        Console.WriteLine("Ønsker du å fortsette? eller vil du velge en annen kalkulator?");
-                        Console.WriteLine("Trykk \'J\' for JA, eller \'N\' for NEI.");
-                        FortsetteEllerAvslutte = Convert.ToChar(Console.ReadLine());
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
 
                         break;
                     case 2:
@@ -46,19 +48,11 @@ namespace Converter
                         Fahrenheit = Convert.ToDouble(Console.ReadLine());
                         value = (Fahrenheit - 32) * 5 / 9;
                         Console.WriteLine(value + " Celcius");
-                        Console.WriteLine("Ønsker du å fortsette? eller vil du velge en annen kalkulator?");
-                        Console.WriteLine("Trykk \'J\' for JA, eller \'N\' for NEI.");
-                        FortsetteEllerAvslutte = Convert.ToChar(Console.ReadLine());
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                 }
-                if (FortsetteEllerAvslutte == 'N') status = false;
             }
-            //Console.WriteLine("Ønsker du å gå tilbake? trykk \'J\' For å gå tilbake");
-            //Tilbake = Convert.ToChar(Console.ReadLine());
-            //if (Tilbake == 'J')
-            //{
-            //   // back();
-            //}
 
         } 
     }

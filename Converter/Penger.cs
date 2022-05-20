@@ -8,6 +8,8 @@ namespace Converter
 {
     internal class Penger
     {
+        TheOneMethod objTheOneMethod = new TheOneMethod();
+
         bool status = true;
         double BrukerValg;
         double value;
@@ -31,45 +33,51 @@ namespace Converter
                         kroner = Convert.ToDouble(Console.ReadLine());
                         value = kroner * 0.098;
                         Console.WriteLine(value + " Euro");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 2:
                         Console.WriteLine("Du har valgt Kroner til Dollar Konverter. Skriv inn beløp:");
                         kroner = Convert.ToDouble(Console.ReadLine());
                         value = kroner * 0.10;
-
                         Console.WriteLine(value + " Dollar");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 3:
                         Console.WriteLine("Du har valgt Euro til Krone Konverter. Skriv inn beløp:");
                         euro = Convert.ToDouble(Console.ReadLine());
                         value = euro * 10.24;
-
                         Console.WriteLine(value + " Kroner");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 4:
                         Console.WriteLine("Du har valgt Euro til Dollar Konverter. Skriv inn beløp:");
                         euro = Convert.ToDouble(Console.ReadLine());
                         value = euro * 1.05;
-
                         Console.WriteLine(value + " Dollar");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 5:
                         Console.WriteLine("Du har valgt Dollar til Kroner Konverter. Skriv inn beløp:");
                         dollar = Convert.ToDouble(Console.ReadLine());
                         value = dollar * 9.74;
-
                         Console.WriteLine(value + " Kroner");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
                         break;
                     case 6:
                         Console.WriteLine("Du har valgt Dollar til Euro Konverter. Skriv inn beløp:");
                         dollar = Convert.ToDouble(Console.ReadLine());
                         value = dollar * 0.95;
-
                         Console.WriteLine(value + " Euro");
+                        objTheOneMethod.TheMethod();
+                        status = objTheOneMethod.isTrueOrNot;
 
                         break;
                 }
-                if (FortsetteEllerAvslutte == 'N') status = false;
 
             }
         }
